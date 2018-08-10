@@ -117,109 +117,112 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang = "scss">
-$bold: 850;
-$colorSalmon: #ff7373;
-@media only screen and (max-width: 576px) {
-	.md-card {
-		border: 1px solid;
+	$bold: 850;
+	$colorSalmon: #ff7373;
+	@media only screen and (max-width: 576px) {
+		.md-card {
+			border: 1px solid;
+		}
 	}
-}
-div.transition-container {
-	height: 100% auto;
-}
-div.portfolio-content {
-	padding: 5%;
-	margin-top: 5%;
-	height: auto;
-	width: 100%;
-	overflow-y: auto;
-	overflow-x: hidden;
-	/* Prevent from expanding outside parent */
-	max-height: inherit;
-}
-div#card-column {
-	margin-bottom: 20px;
-	min-height: 100%;
-	opacity: 0;
-	transform: translate(-10px, -10px);
-	transition: all 1s ease;
-}
-.bold {
-	font-weight: $bold;
-}
-div#status .col span {
-	font-weight: $bold;
-}
-.md-card-header:after{
-	mix-blend-mode: difference;
-}
-.md-subhead {
-	color: white;
-}
-.md-card {
-	position: relative;
-	height: 100%;
-	font-family: Roboto;
-	text-align: left;
-}
-.md-card-content {
-	font-size: 1em;
-	margin: 5%;
-	height: auto;
-}
-div#icons a {
-	margin-left: 20px;
-	text-decoration: none;
-}
-div#icons .md-icon.hover:hover {
-	color: white;
-	transform: scale(1.2);
-}
-div#icons {
-	height: 100%;
-	text-align: right;
-	margin: auto;
-	margin-right: 10px;
-}
-.md-card-content div.description, .md-card-content div.tech {
-	border-top: solid 1px;
-	border-color: $colorSalmon;
-	margin-top: 5%;
-	padding-top: 5%;
-}
-div.tech .col {
-	text-align: center;
-	margin-bottom: 5px;
-}
-/* Dialog */
-div.dialog {
-	transition: all 0.3s ease-out;
-	transform: scale(0);
-	visibility: hidden;
-	position: absolute;
-	top: 0;
-	left: 0;
-	height: 100%;
-	width: 100%;
-	z-index: 100;
-	padding: 10%;
-}
-div.dialog.active {
-	visibility: visible;
-	transform: scale(1);
-}
-div.dialog .md-content {
-	position: relative;
-	height: 100%;
-	width: 100%;
-}
-div .dialog .md-content div {
-	position: relative;
-	height: 100%;
-}
-.md-icon.close{
-	position: absolute;
-	top: 10px;
-	right: 10px;
-}
+	div.transition-container {
+		height: 100% auto;
+	}
+	div.portfolio-content {
+		padding: 5%;
+		margin-top: 5%;
+		height: auto;
+		width: 100%;
+		overflow-y: auto;
+		overflow-x: hidden;
+		/* Prevent from expanding outside parent */
+		max-height: inherit;
+	}
+	div#card-column {
+		margin-bottom: 20px;
+		min-height: 100%;
+		opacity: 0;
+		transform: translate(-10px, -10px);
+		transition: all 1s ease;
+	}
+	.bold {
+		font-weight: $bold;
+	}
+	div#status .col span {
+		font-weight: $bold;
+	}
+	.md-card-header:after{
+		mix-blend-mode: difference;
+	}
+	.md-subhead {
+		color: white;
+	}
+	.md-card {
+		position: relative;
+		height: 100%;
+		font-family: Roboto;
+		text-align: left;
+	}
+	.md-card-content {
+		font-size: 1em;
+		margin: 5%;
+		height: auto;
+	}
+	div#icons a {
+		margin-left: 20px;
+		text-decoration: none;
+	}
+	div#icons .md-icon.hover:hover {
+		color: white;
+		transform: scale(1.2);
+	}
+	div#icons {
+		height: 100%;
+		text-align: right;
+		margin: auto;
+		margin-right: 10px;
+	}
+	.md-card-content div.description, .md-card-content div.tech {
+		border-top: solid 1px;
+		border-color: $colorSalmon;
+		margin-top: 5%;
+		padding-top: 5%;
+	}
+	.md-card-content div.description {
+		text-align: justify;
+	}
+	div.tech .col {
+		text-align: center;
+		margin-bottom: 5px;
+	}
+	/* Dialog */
+	div.dialog {
+		transition: all 0.3s ease-out;
+		transform: scale(0);
+		visibility: hidden;
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		z-index: 100;
+		padding: 10%;
+	}
+	div.dialog.active {
+		visibility: visible;
+		transform: scale(1);
+	}
+	div.dialog .md-content {
+		position: relative;
+		height: 100%;
+		width: 100%;
+	}
+	div .dialog .md-content div {
+		position: relative;
+		height: 100%;
+	}
+	.md-icon.close{
+		position: absolute;
+		top: 10px;
+		right: 10px;
+	}
 </style>

@@ -10,7 +10,7 @@
 								<md-icon>person</md-icon>
 							</md-button>
 						</router-link>
-						<router-link class = "col border-right" to = "/skills">
+						<router-link class = "col border-right" to = "/about">
 							<md-button class = "md-icon-button">
 								<md-icon>create</md-icon>
 							</md-button>
@@ -67,6 +67,11 @@ $colorSilver: #c0c0c0;
 		margin: 0px !important;
 	}
 }
+@media only screen and (max-width: 768px) and (min-width: 576px) and (orientation:portrait){
+	.content {
+		margin: 25px !important;
+	}
+}
 @media screen and (orientation:landscape) {
 	div.page {
 		overflow-y: auto !important;
@@ -80,12 +85,13 @@ body, html{
 	overflow: hidden;
 }
 div.page {
+	margin: 0 !important;
+	overflow-y: auto;
 	height: 100%;
 	width: 100%;
-	margin: 0;
 }
 nav.navigation {
-	z-index: 10;
+	z-index: 500;
 	position: absolute;
 	height: 50px;
 	background-color: $colorGrayLight;
@@ -143,7 +149,7 @@ div#overlay.active {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	margin: 50px 50px;
+	margin: 50px;
 }
 .header {
 	height: 70px;

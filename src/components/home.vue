@@ -128,7 +128,7 @@ $bold: 850;
 		text-align: center !important;
 	}
 	.row-2 {
-		height: 35% !important;
+		height: auto !important;
 		overflow-y: auto;
 		margin: 0 !important;
 	}
