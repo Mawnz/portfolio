@@ -61,26 +61,23 @@
 								<div class = "col-4 right">
 									<md-icon class = "double">assignment_ind</md-icon>
 								</div>
-								<div class = "col text">Måns Åberg</div>
+								<div class = "col text">{{personal.name}}</div>
 							</div>
 							<div class = "row padding-responsive">
 								<div class = "col-4 right">
 								<md-icon class = "double">cake</md-icon>
 							</div>
-								<div class = "col text">25</div>
+								<div class = "col text">{{personal.age}}</div>
 							</div>
 							<div class = "row padding-responsive">
 								<div class = "col-4 right">
 									<md-icon class = "double">location_city</md-icon>
 								</div>
-								<div class = "col text">Stockholm, Sweden</div>
+								<div class = "col text">{{personal.location}}</div>
 							</div>
 						</div>
-						<div id = "about_me" class = "about_me col-lg-7 col-12 px-5">
-							I'm an energetic, driven and happy dude that likes to learn a little about everything!<br>
-							Trampoline is- and has been a huge part of my life now for 14 years. It has taught me a lot in terms of leadership, how to handle criticism, attention to detail, support of team mates etc and has also evolved me as a person. <br><br>
-							Tech has always been with me. Dismantling electronic components, trying to build my own portable Nintendo 64, putting together computers, programming, gaming... It's my biggest interest still.<br><br>
-							I am self taught playing the piano along with some other instruments, and I've casually been producing music over the years. You can find my music following these links if you're interested: <a href = "https://soundcloud.com/mawnzwip" target = "_blank"> Soundcloud </a> and <a href = "https://mawnz.newgrounds.com/" target = "_blank"> Newgrounds </a>
+						<div id = "about_me" class = "about_me col-lg-7 col-12 px-5" v-html = "personal.info">
+							{{personal.info}}
 						</div>
 					</div>
 				</div>
@@ -135,6 +132,7 @@ export default {
 	data () {
 		return {
 			active: null,
+			personal: require('./personal.js'),
 			educations: this.sorted(require('./educations.js')),
 			works: this.sorted(require('./work.js')),
 			skills: require('./skills.js'),
@@ -217,6 +215,7 @@ export default {
 		text-align: justify;
 		display: inline;
 		max-height: 100%;
+		line-height: 2em;
 	}
 	div.text {
 		line-height: 1.75em;
