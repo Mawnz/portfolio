@@ -1,0 +1,26 @@
+version: '3'
+
+services:
+  front_prod:
+    name: front_prod
+    build:
+      context: ./front-end
+      dockerfile: Dockerfile_build
+    volumes:
+      - ./front:/app
+    command: sh /app/bin/prod_entrypoint.sh
+    networks:
+      - mob_control_production_network
+  nginx_prod:
+    name: nginx_prod
+    image: nginx
+    restart: always
+    volumes:
+      - ./nginx/nginx-prod.conf:/etc/nginx/conf.d/default.conf
+      - ./nginx/log:/var/log/nginx
+      - ./front-end:/var/www/app
+    links:
+      - front_prod:front
+    ports:
+      - '8787:8787'
+
