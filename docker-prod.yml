@@ -8,7 +8,8 @@ services:
       dockerfile: prod.dockerfile
     volumes:
       - ./front:/app
-    command: sh /app/bin/prod.entrypoint.sh
+      - /app/node_modules
+    command: npm run build
     networks:
       - mob_control_production_network
   nginx_prod:
