@@ -2,7 +2,7 @@ version: '3'
 
 services:
   front_prod:
-    name: front_prod
+    container_name: front_prod
     build:
       context: ./front-end
       dockerfile: Dockerfile_build
@@ -12,7 +12,7 @@ services:
     networks:
       - mob_control_production_network
   nginx_prod:
-    name: nginx_prod
+    container_name: nginx_prod
     image: nginx
     restart: always
     volumes:
