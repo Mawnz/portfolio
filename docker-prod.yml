@@ -9,8 +9,6 @@ services:
     volumes:
       - ./front:/app
     command: sh /app/bin/prod_entrypoint.sh
-    networks:
-      - mob_control_production_network
   nginx_prod:
     container_name: nginx_prod
     image: nginx
