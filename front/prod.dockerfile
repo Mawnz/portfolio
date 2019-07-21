@@ -4,7 +4,7 @@ RUN mkdir /usr/src
 RUN mkdir /usr/src/cache
 WORKDIR /usr/src/cache
 
-COPY package.json package-lock.json ./
+COPY package.json ./
 
 RUN npm install
 
