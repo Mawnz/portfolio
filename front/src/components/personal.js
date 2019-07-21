@@ -1,7 +1,7 @@
 module.exports = {
 	name: 'Måns Åberg',
 	location: 'Stockholm, Sweden',
-	age: 25,
+	age: 26,
 	info: `I'm an energetic, driven and happy dude that likes to learn a little about everything!<br>
 		Trampoline is- and has been a huge part of my life now for 15 years, and I wont stop doing it until my body gives in!
 		I've casually been producing music over the years. 

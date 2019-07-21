@@ -1,7 +1,7 @@
 <template>
 	<div class = "row page">
 		<div class = "col-lg-4 col-12 lightgray img">
-			<img src = "static/assets/mawnz.png" alt = "Avatar" class = "avatar md-elevation-12">
+			<img src="@/assets/mawnz.png" alt = "Avatar" class = "avatar md-elevation-12">
 		</div>
 		<div id = "personal-info" class = "col-lg-8 col-12 inner-padding">
 			<div class = "row row-1 align-items-lg-end">
@@ -73,7 +73,7 @@ export default {
 			location: 'Stockholm, Sweden',
 			phone: '+4673 570 03 04',
 			email: 'mans.aberg@gmail.com',
-			catchphrase: 'Front-end developer and Elite gymnast',
+			catchphrase: 'Developer and Elite gymnast',
 			firstname: 'MÅNS',
 			lastname: 'ÅBERG'
 		}

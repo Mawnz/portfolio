@@ -11,7 +11,7 @@
 								container: '.pages-container',
 								onStart: startScroll
 							}">
-							<md-icon class = "md-size-2x" :class = "{'md-primary': active === 'personal'}" >info</md-icon>
+							<md-icon class = "fa-1x fas fa-info-circle" :class = "{'md-primary': active === 'personal'}" ></md-icon>
 						</md-button>
 						<div class="vertical-line"></div>
 					</li>
@@ -23,7 +23,7 @@
 								container: '.pages-container',
 								onStart: startScroll
 							}">
-							<md-icon class = "md-size-2x" :class = "{'md-primary': active === 'work'}">work</md-icon>
+							<md-icon class = "fa-1x fas fa-briefcase" :class = "{'md-primary': active === 'work'}"></md-icon>
 						</md-button>
 						<div class="vertical-line"></div>
 					</li>
@@ -35,7 +35,7 @@
 								container: '.pages-container',
 								onStart: startScroll
 							}">
-							<md-icon class = "md-size-2x" :class = "{'md-primary': active === 'education'}">school</md-icon>
+							<md-icon class = "fa-1x fas fa-school" :class = "{'md-primary': active === 'education'}"></md-icon>
 						</md-button>
 						<div class="vertical-line"></div>
 					</li>
@@ -48,7 +48,7 @@
 								onStart: scrollStartSkills,
 								onDone: scrollEndSkills
 							}">
-							<md-icon class = "md-size-2x" :class = "{'md-primary': active === 'skills'}">star</md-icon>
+							<md-icon class = "fa-1x fas fa-star" :class = "{'md-primary': active === 'skills'}"></md-icon>
 						</md-button>
 					</li>
 				</ul>
@@ -59,19 +59,19 @@
 						<div id = "personal_info_with_icons" class = "col-lg-5 col-12">
 							<div class = "row padding-responsive">
 								<div class = "col-4 right">
-									<md-icon class = "double">assignment_ind</md-icon>
+									<md-icon class = "double fa-1x fas fa-user-tie"></md-icon>
 								</div>
 								<div class = "col text">{{personal.name}}</div>
 							</div>
 							<div class = "row padding-responsive">
 								<div class = "col-4 right">
-								<md-icon class = "double">cake</md-icon>
+								<md-icon class = "double fa-1x fas fa-birthday-cake"></md-icon>
 							</div>
 								<div class = "col text">{{personal.age}}</div>
 							</div>
 							<div class = "row padding-responsive">
 								<div class = "col-4 right">
-									<md-icon class = "double">location_city</md-icon>
+									<md-icon class = "double fa-1x fas fa-city"></md-icon>
 								</div>
 								<div class = "col text">{{personal.location}}</div>
 							</div>

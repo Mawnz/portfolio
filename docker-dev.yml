@@ -1,0 +1,25 @@
+version: "3"
+
+services:
+  front:
+    container_name: front
+    hostname: front
+    build:
+      context: ./front
+      dockerfile: dev.dockerfile
+    volumes:
+      - ./front/src:/app/src
+      - ./front/vue.config.js:/app/vue.config.js
+    ports:
+      - "8080:8080"
+  web:
+    container_name: nginx
+    image: nginx:latest
+    restart: always
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/conf.d/defaul.conf
+    ports:
+      - 80:80
+      - 443:443
+    links:
+      - front

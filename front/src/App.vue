@@ -7,17 +7,17 @@
 					<div class = "row w-100">
 						<router-link class = "col border-right" to = "/home">
 							<md-button class = "md-icon-button">
-								<md-icon>person</md-icon>
+								<md-icon class="fas fa-user"></md-icon>
 							</md-button>
 						</router-link>
 						<router-link class = "col border-right" to = "/about">
 							<md-button class = "md-icon-button">
-								<md-icon>create</md-icon>
+								<md-icon class="fas fa-edit"></md-icon>
 							</md-button>
 						</router-link>
 						<router-link class = "col" to = "/portfolio">
 							<md-button class = "md-icon-button">
-								<md-icon>work</md-icon>
+								<md-icon class="fas fa-briefcase"></md-icon>
 							</md-button>
 						</router-link>
 					</div>

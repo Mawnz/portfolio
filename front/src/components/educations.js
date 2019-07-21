@@ -3,7 +3,7 @@ module.exports = [
 		school: 'KTH',
 		start: 2012,
 		end: 2017,
-		program: 'Mediatechnology (253 HP)'
+		program: 'Media Technology (253 HP)'
 	},
 	{
 		school: 'Åva Gymnasium',

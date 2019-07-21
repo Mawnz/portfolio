@@ -1,7 +1,7 @@
 module.exports = [
 	{
 		name: 'Javascript',
-		level: 8
+		level: 9
 	},
 	{
 		name: 'Python',
@@ -9,19 +9,19 @@ module.exports = [
 	},
 	{
 		name: 'Web Design',
-		level: 5
+		level: 7
 	},
 	{
 		name: 'AngularJS',
-		level: 6
+		level: 5
 	},
 	{
 		name: 'Vue.js',
-		level: 4
+		level: 9
 	},
 	{
 		name: 'C#',
-		level: 2
+		level: 5
 	},
 	{
 		name: 'Java',
@@ -29,7 +29,7 @@ module.exports = [
 	},
 	{
 		name: 'D3.js',
-		level: 6
+		level: 8
 	},
 	{
 		name: 'Openlayers',

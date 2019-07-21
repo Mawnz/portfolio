@@ -1,5 +1,5 @@
 <template>
-	<div class = "h-100">
+	<div class="h-100">
 		<!-- Next page -->
 		<div class = "row page">
 			<div class = "portfolio-content">
@@ -22,13 +22,13 @@
 									</div>
 									<div id = "icons">
 										<a v-if = "project.source" v-bind:href = "project.source" target = "_blank">
-											<md-icon class = "hover">code</md-icon>
+											<md-icon class = "hover fas fa-code"></md-icon>
 										</a>
 										<a v-if = "project.link" v-bind:href = "project.link" target = "_blank">
-											<md-icon v-bind:class = "{hover: project.link}">ondemand_video</md-icon>
+											<md-icon class="fas fa-play-circle" v-bind:class = "{hover: project.link}"></md-icon>
 										</a>
 										<a v-if = "project.img" v-on:click = "open($event, project.img)" target = "_blank">
-											<md-icon v-bind:class = "{hover: project.img}">image</md-icon>
+											<md-icon class="fas fa-image" v-bind:class = "{hover: project.img}"></md-icon>
 										</a>
 									</div>
 								</div>
