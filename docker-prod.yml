@@ -5,10 +5,10 @@ services:
     container_name: front_prod
     build:
       context: ./front
-      dockerfile: Dockerfile_build
+      dockerfile: prod.dockerfile
     volumes:
       - ./front:/app
-    command: sh /app/bin/prod_entrypoint.sh
+    command: sh /app/bin/prod.entrypoint.sh
   nginx_prod:
     container_name: nginx_prod
     image: nginx
