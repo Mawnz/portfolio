@@ -4,7 +4,7 @@ services:
   front_prod:
     container_name: front_prod
     build:
-      context: ./front-end
+      context: ./front
       dockerfile: Dockerfile_build
     volumes:
       - ./front:/app
