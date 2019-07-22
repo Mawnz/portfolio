@@ -1,6 +1,5 @@
-from node:10-alpine
+FROM node:10.16
 
-RUN mkdir /usr/src
 RUN mkdir /usr/src/cache
 WORKDIR /usr/src/cache
 
@@ -13,5 +12,3 @@ RUN mkdir /app
 COPY . /app
 
 WORKDIR /app
-
-RUN ls
